@@ -2,7 +2,7 @@
 
 ![image](Overview.png)
 
-<h2> Enviorment setup </h2>
+<h2> Environment setup </h2>
 <h3>Install the conda environment with the following commands one by one:</h3>
 <br>
 <code>conda create -n GRAB python=3.9.4</code>
@@ -17,6 +17,10 @@
 From the root directory
 <br>
 <code>cd main_attack</code>
+
+Create symbolic link of utils.
+<br>
+<code>ln -s ../utils utils</code>
 
 <h4> Parameters Explanation</h4>
 --device: the device to run experiments on, e.g. cuda:0
@@ -45,6 +49,10 @@ From the root directory
 <br>
 <code>cd main_attack</code>
 
+Create symbolic link of utils.
+<br>
+<code>ln -s ../utils utils</code>
+
 <h4> Parameters Explanation</h4>
 --batch_size: the batch size for experiments. For this experiment, only choose between 8, 16, and 32.
 <br>
@@ -56,6 +64,14 @@ The results will be saved in <code>results/easy/DATASET</code> from root directo
 before running the experiments.
 
 <h3> Practical Settings (Table 5 in paper) </h3>
+
+From the root directory
+<br>
+<code>cd main_attack</code>
+
+Create symbolic link of utils.
+<br>
+<code>ln -s ../utils utils</code>
 
 <h4> Parameters Explanation</h4>
 The same as the benchmarking experiment.
