@@ -1,6 +1,6 @@
 # GRAB: Uncovering Gradient Inversion Risks in Practical Language Model Training
 
-![image](overview.png)
+![image](Overview.png)
 
 <h2> Environment setup </h2>
 <h3>Install the conda environment with the following commands one by one:</h3>
