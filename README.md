@@ -7,6 +7,8 @@
 <br>
 <code>conda create -n GRAB python=3.9.4</code>
 <br>
+<code>conda activate GRAB</code>
+<br>
 <code>pip install torch==2.0.1+cu118 --index-url https://download.pytorch.org/whl/cu118</code>
 <br>
 <code>pip install transformers==4.34.1 joblib==1.3.2</code>
