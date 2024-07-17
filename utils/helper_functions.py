@@ -6,14 +6,15 @@ import numpy as np
 
 
 class MyDataset(torch.utils.data.Dataset):
-    def __init__(self, encodings):
-        self.encodings = encodings
-
-    def __getitem__(self, idx):
-        return {key: torch.tensor(val[idx]) for key, val in self.encodings.items()}
+    def __init__(self, sequences, labels):
+        self.sequences = sequences
+        self.labels = labels
 
     def __len__(self):
-        return len(self.encodings["input_ids"])
+        return len(self.sequences)
+
+    def __getitem__(self, idx):
+        return self.sequences[idx], self.labels[idx]
 
 
 def train_epoch(model, train_loader, device):
